@@ -1,0 +1,161 @@
+.customCarousel .carousel-item{
+    height: 92vh;
+}
+
+.customCarousel .carousel-item img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.customCarousel .carousel-caption{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    bottom: -120px;
+    transition: 0.3s all;
+}
+
+.customCarousel:hover .carousel-caption{
+    bottom: 0;
+}
+
+
+
+/* CARDS */
+
+.cards{
+
+    padding: 32px 0;
+
+    .container{
+        max-width: max-content;
+    }
+
+    .grid{
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* CTA */
+
+
+.cta{
+    position: relative;
+    background-image: url("./images/first-ever-fully-completed-concept-art-for-palworld-v0-8sm9otzcsqgd1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+
+        color: white;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+    }
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #212529;
+    color: white;
+
+    padding: 32px 0;
+
+
+    .links{
+        display: flex;
+        gap: 12px;
+
+        a{
+            text-decoration: none;
+            color: #0D6EFD;
+        }
+    }
+}
+
+
+.back{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    
+    a{
+        background-color: #0D6EFD;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    
+    .cards .grid{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cards .grid .card{
+        width: 100% !important;
+    }
+
+    .cards .grid .card img{
+        height: 200px !important;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+
+    .cta p{
+        text-align: center;
+    }
+
+
+    footer h3{
+        text-align: center;
+    }
+
+    footer .links{
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 756px) {
+    header .carousel-inner{
+        height: 40vh !important;
+    }
+}
